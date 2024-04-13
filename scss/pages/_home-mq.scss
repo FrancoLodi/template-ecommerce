@@ -1,0 +1,36 @@
+// HOME Media query
+
+// Media query tablet
+@media screen and (min-width:720px){
+    body{
+        main{
+            .trending{
+                .trending-grilla{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                }
+            }
+        }
+    }
+}
+
+// Media query desktop
+@media screen and (min-width:1024px){
+    body{
+        main{
+            .banner-responsive{
+                grid-template-columns: auto auto;
+                .banner-responsive-derecha{
+                    display: grid;
+                    grid-template-columns: auto;
+                }
+            }
+            .trending{
+                .trending-grilla{
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                }
+            }
+        }
+    }
+}
