@@ -4,9 +4,19 @@
 @media screen and (min-width:720px){
     body{
         main{
+            .banner-responsive{
+                .banner-responsive-derecha{
+                    grid-template-columns: auto auto;
+                }
+            }
             .trending{
                 .trending-grilla{
                     display: grid;
+                    grid-template-columns: auto auto;
+                }
+            }
+            .instagram{
+                .instagram-grilla{
                     grid-template-columns: auto auto;
                 }
             }
@@ -23,6 +33,10 @@
                 .banner-responsive-derecha{
                     display: grid;
                     grid-template-columns: auto;
+                    gap: 20px;
+                    img{
+                        max-height: 300px;
+                    }
                 }
             }
             .trending{
