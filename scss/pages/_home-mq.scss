@@ -20,6 +20,12 @@
                     grid-template-columns: auto auto;
                 }
             }
+            .newsletter{
+                .newsletter-grilla{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                }
+            }
         }
     }
 }

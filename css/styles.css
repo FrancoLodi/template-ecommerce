@@ -100,7 +100,7 @@ body main .banner-responsive .banner-responsive-izquierda button {
   font-family: sans-serif;
   color: white;
   padding: 6px 16px;
-  border: 2px solid whitesmoke;
+  border: 3px solid whitesmoke;
   background-color: #2aa0dd;
   width: fit-content;
   margin-bottom: 12px;
@@ -155,6 +155,32 @@ body main .trending .trending-grilla div {
 body main .trending .trending-grilla div div p {
   padding: 4px;
 }
+body main .trending .trending-button {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+body main .trending .trending-button button {
+  text-align: center;
+  font-size: 34px;
+  font-family: sans-serif;
+  color: black;
+  padding: 6px 16px;
+  border: 3px solid black;
+  background-color: white;
+  width: fit-content;
+  margin-top: 20px;
+}
+body main .trending .trending-button button:hover {
+  box-shadow: 3px 3px 0 black;
+  transform: translate(-3px, -3px);
+  transition: all 0.1s ease-in-out;
+}
+body main .trending .trending-button button:active {
+  box-shadow: none;
+  transform: translate(1px, 1px);
+  transition: all 0.1s ease-in-out;
+}
 body main .instagram {
   background-color: #2aa0dd;
   border-top: 3px solid black;
@@ -174,14 +200,112 @@ body main .instagram .instagram-grilla {
   grid-template-columns: auto;
   justify-content: center;
 }
+body main .instagram .instagram-grilla .instagram-descripcion {
+  text-align: justify;
+  max-width: 400px;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 20px;
+}
+body main .instagram .instagram-imagen {
+  justify-content: center;
+}
+body main .instagram .instagram-imagen img {
+  margin-left: 60px;
+}
+body main .newsletter {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+body main .newsletter .newsletter-titulo {
+  color: palevioletred;
+  text-align: center;
+  font-size: 36px;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-shadow: 4px 4px 0 black;
+}
+body main .newsletter .newsletter-grilla .newsletter-grilla-texto .newsletter-subtitulo {
+  text-align: justify;
+  max-width: 360px;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 20px;
+  padding-bottom: 0;
+  margin-left: 16px;
+  margin-bottom: 0;
+}
+body main .newsletter .newsletter-grilla .newsletter-grilla-texto .newsletter-descripcion {
+  max-width: 360px;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 20px;
+  margin-left: 16px;
+  margin-top: 0;
+}
+body main .newsletter .newsletter-grilla .newsletter-grilla-form {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+body main .newsletter .newsletter-grilla .newsletter-grilla-form p {
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-shadow: 2px 2px 0 black;
+}
+body main .newsletter .newsletter-grilla .newsletter-grilla-form textarea {
+  border: 3px solid black;
+  padding: 14px 12px 0;
+  height: 60px;
+  max-width: 318px;
+}
 body footer {
   background-color: black;
+}
+body footer .footer-logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 body footer .footer-logo img {
   width: 75px;
 }
-body footer .footer-sitemap p {
+body footer .footer-logo p {
   color: white;
+  margin-left: 20px;
+}
+body footer .footer-sitemap {
+  display: flex;
+  flex-direction: column;
+}
+body footer .footer-sitemap p {
+  text-align: center;
+  color: white;
+}
+body footer .footer-firma {
+  text-align: center;
+  border-top: 1px solid whitesmoke;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+body footer .footer-firma p {
+  color: whitesmoke;
+  font-weight: 700;
+}
+body footer .footer-firma p .firma-nombre {
+  text-decoration: none;
+  color: whitesmoke;
+}
+body footer .footer-firma p .firma-nombre:hover {
+  color: palevioletred;
 }
 
 @media screen and (min-width: 720px) {
@@ -193,6 +317,10 @@ body footer .footer-sitemap p {
     grid-template-columns: auto auto;
   }
   body main .instagram .instagram-grilla {
+    grid-template-columns: auto auto;
+  }
+  body main .newsletter .newsletter-grilla {
+    display: grid;
     grid-template-columns: auto auto;
   }
 }
