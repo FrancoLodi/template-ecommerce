@@ -15,6 +15,17 @@
                     grid-template-columns: auto auto;
                 }
             }
+            .grilla-reservas-pagos{
+                grid-template-columns: auto auto;
+                .reservas{
+                    width: 100%;
+                    border-right: 3px solid black;
+                    border-bottom: none;
+                }
+                .pagos{
+                    width: 100%;
+                }
+            }
             .instagram{
                 .instagram-grilla{
                     grid-template-columns: auto auto;
@@ -24,6 +35,26 @@
                 .newsletter-grilla{
                     display: grid;
                     grid-template-columns: auto auto;
+                }
+            }
+        }
+        footer{
+            .footer-grilla{
+                display: grid;
+                grid-template-columns: auto auto;
+                .footer-logo{
+                    img{
+                        width: 280px;
+                    }
+                }
+                .footer-sitemap{
+                    border-left: 1px solid white;
+                    a{
+                        p{
+                            padding-left: 60px;
+                            text-align: left;
+                        }
+                    }
                 }
             }
         }
@@ -40,15 +71,41 @@
                     display: grid;
                     grid-template-columns: auto;
                     gap: 20px;
-                    img{
-                        max-height: 300px;
+                    a{
+                        img{
+                            max-height: 300px;
+                        }
                     }
+                    
                 }
             }
             .trending{
                 .trending-grilla{
                     display: grid;
                     grid-template-columns: auto auto auto;
+                }
+            }
+            .instagram{
+                .instagram-grilla{
+                    gap: 100px;
+                }
+            }
+            .newsletter{
+                .newsletter-grilla{
+                    gap: 140px;
+                }
+            }
+        }
+        footer{
+            .footer-grilla{
+                gap: 60px;
+                .footer-logo{
+                    img{
+                        margin-left: 60px;
+                    }
+                }
+                .footer-sitemap{
+                    margin-left: 30px;
                 }
             }
         }

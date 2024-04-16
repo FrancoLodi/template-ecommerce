@@ -94,7 +94,7 @@ body main .banner-responsive .banner-responsive-izquierda img {
   margin-top: 10px;
   width: 90%;
 }
-body main .banner-responsive .banner-responsive-izquierda button {
+body main .banner-responsive .banner-responsive-izquierda a button {
   text-align: center;
   font-size: 34px;
   font-family: sans-serif;
@@ -105,12 +105,12 @@ body main .banner-responsive .banner-responsive-izquierda button {
   width: fit-content;
   margin-bottom: 12px;
 }
-body main .banner-responsive .banner-responsive-izquierda button:hover {
+body main .banner-responsive .banner-responsive-izquierda a button:hover {
   box-shadow: 3px 3px 0 white;
   transform: translate(-3px, -3px);
   transition: all 0.1s ease-in-out;
 }
-body main .banner-responsive .banner-responsive-izquierda button:active {
+body main .banner-responsive .banner-responsive-izquierda a button:active {
   box-shadow: none;
   transform: translate(1px, 1px);
   transition: all 0.1s ease-in-out;
@@ -120,11 +120,39 @@ body main .banner-responsive .banner-responsive-derecha {
   grid-template-columns: auto;
   gap: 20px;
 }
-body main .banner-responsive .banner-responsive-derecha img {
+body main .banner-responsive .banner-responsive-derecha a {
+  position: relative;
+  text-decoration: none;
+}
+body main .banner-responsive .banner-responsive-derecha a img {
   width: 100%;
   height: fixed;
   border: 3px solid black;
   max-height: fit-content;
+  display: block;
+}
+body main .banner-responsive .banner-responsive-derecha a .superposicion {
+  background-color: whitesmoke;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border: 3px solid black;
+}
+body main .banner-responsive .banner-responsive-derecha a .superposicion p {
+  font-size: 32px;
+  font-family: sans-serif;
+  color: black;
+  font-weight: 700;
+}
+body main .banner-responsive .banner-responsive-derecha a .superposicion:hover {
+  opacity: 0.8;
 }
 body main .trending {
   background-color: whitesmoke;
@@ -132,6 +160,9 @@ body main .trending {
   border-bottom: 3px solid black;
   padding-top: 10px;
   padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
 }
 body main .trending .trending-titulo {
   color: white;
@@ -149,16 +180,33 @@ body main .trending .trending-grilla {
   margin-left: 34px;
   margin-right: 34px;
 }
-body main .trending .trending-grilla div {
-  border: 3px solid black;
+body main .trending .trending-grilla a {
+  text-decoration: none;
 }
-body main .trending .trending-grilla div div p {
-  padding: 4px;
+body main .trending .trending-grilla a div {
+  border: 2px solid black;
+}
+body main .trending .trending-grilla a div div img {
+  max-width: 300px;
+}
+body main .trending .trending-grilla a div div .tarjeta-nombre {
+  font-size: 17px;
+  margin: 0;
+  padding: 8px 18px;
+  color: black;
+  border-bottom: 3px solid black;
+}
+body main .trending .trending-grilla a div div .tarjeta-precio {
+  font-size: 15px;
+  margin: 0;
+  padding: 8px 18px;
+  color: black;
 }
 body main .trending .trending-button {
-  display: flex;
   justify-content: center;
   text-decoration: none;
+  text-align: center;
+  width: auto;
 }
 body main .trending .trending-button button {
   text-align: center;
@@ -181,14 +229,79 @@ body main .trending .trending-button button:active {
   transform: translate(1px, 1px);
   transition: all 0.1s ease-in-out;
 }
-body main .instagram {
+body main .grilla-reservas-pagos {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  background: linear-gradient(to right, #2aa0dd 50%, palevioletred 50%);
+  width: fixed;
+}
+body main .grilla-reservas-pagos .reservas {
   background-color: #2aa0dd;
+  padding: 0 30px 20px;
+  border-bottom: 3px solid black;
+}
+body main .grilla-reservas-pagos .reservas .reservas-titulo {
+  color: #2aa0dd;
+  text-align: center;
+  font-size: 36px;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-shadow: 4px 4px 0 black;
+  margin-top: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+body main .grilla-reservas-pagos .reservas .reservas-descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body main .grilla-reservas-pagos .reservas .reservas-descripcion p {
+  max-width: 500px;
+  text-align: justify;
+  color: black;
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 20px;
+  text-align: justify;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+body main .grilla-reservas-pagos .pagos {
+  background-color: palevioletred;
+  padding: 10px 30px 20px;
+}
+body main .grilla-reservas-pagos .pagos .pagos-titulo {
+  color: palevioletred;
+  text-align: center;
+  font-size: 36px;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-shadow: 4px 4px 0 black;
+}
+body main .grilla-reservas-pagos .pagos .pagos-descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .grilla-reservas-pagos .pagos .pagos-descripcion p {
+  text-align: justify;
+  max-width: 500px;
+  color: black;
+  font-size: 20px;
+  font-family: sans-serif;
+  padding: 20px;
+}
+body main .instagram {
+  background-color: white;
   border-top: 3px solid black;
   border-bottom: 3px solid black;
   padding: 10px 30px 20px;
 }
 body main .instagram .instagram-titulo {
-  color: #2aa0dd;
+  color: white;
   text-align: center;
   font-size: 36px;
   font-family: sans-serif;
@@ -201,18 +314,43 @@ body main .instagram .instagram-grilla {
   justify-content: center;
 }
 body main .instagram .instagram-grilla .instagram-descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: justify;
   max-width: 400px;
-  color: white;
+  color: black;
   font-size: 20px;
   font-family: sans-serif;
   padding: 20px;
+}
+body main .instagram .instagram-grilla .instagram-descripcion a button {
+  text-align: center;
+  font-size: 34px;
+  font-family: sans-serif;
+  color: black;
+  padding: 6px 16px;
+  border: 3px solid black;
+  background-color: white;
+  width: fit-content;
+  margin-top: 20px;
+}
+body main .instagram .instagram-grilla .instagram-descripcion a button:hover {
+  box-shadow: 3px 3px 0 black;
+  transform: translate(-3px, -3px);
+  transition: all 0.1s ease-in-out;
+}
+body main .instagram .instagram-grilla .instagram-descripcion a button:active {
+  box-shadow: none;
+  transform: translate(1px, 1px);
+  transition: all 0.1s ease-in-out;
 }
 body main .instagram .instagram-imagen {
   justify-content: center;
 }
 body main .instagram .instagram-imagen img {
   margin-left: 60px;
+  max-height: 400px;
 }
 body main .newsletter {
   padding-top: 20px;
@@ -259,34 +397,59 @@ body main .newsletter .newsletter-grilla .newsletter-grilla-form p {
   font-size: 20px;
   font-family: sans-serif;
   text-shadow: 2px 2px 0 black;
+  margin-top: 10px;
 }
 body main .newsletter .newsletter-grilla .newsletter-grilla-form textarea {
   border: 3px solid black;
   padding: 14px 12px 0;
   height: 60px;
   max-width: 318px;
+  resize: none;
+}
+body main .newsletter .newsletter-grilla .newsletter-grilla-form button {
+  text-align: center;
+  font-size: 24px;
+  font-family: sans-serif;
+  color: black;
+  padding: 6px 16px;
+  border: 3px solid black;
+  background-color: white;
+  width: fit-content;
+  margin-top: 20px;
+  margin-left: 192px;
+}
+body main .newsletter .newsletter-grilla .newsletter-grilla-form button:hover {
+  box-shadow: 3px 3px 0 black;
+  transform: translate(-3px, -3px);
+  transition: all 0.1s ease-in-out;
+}
+body main .newsletter .newsletter-grilla .newsletter-grilla-form button:active {
+  box-shadow: none;
+  transform: translate(1px, 1px);
+  transition: all 0.1s ease-in-out;
 }
 body footer {
   background-color: black;
 }
-body footer .footer-logo {
+body footer .footer-grilla .footer-logo {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
-body footer .footer-logo img {
+body footer .footer-grilla .footer-logo img {
   width: 75px;
 }
-body footer .footer-logo p {
-  color: white;
-  margin-left: 20px;
-}
-body footer .footer-sitemap {
+body footer .footer-grilla .footer-sitemap {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-body footer .footer-sitemap p {
+body footer .footer-grilla .footer-sitemap a {
+  text-decoration: none;
+}
+body footer .footer-grilla .footer-sitemap a p {
   text-align: center;
   color: white;
 }
@@ -295,12 +458,13 @@ body footer .footer-firma {
   border-top: 1px solid whitesmoke;
   padding-top: 20px;
   padding-bottom: 10px;
+  font-size: 14px;
 }
 body footer .footer-firma p {
   color: whitesmoke;
-  font-weight: 700;
 }
 body footer .footer-firma p .firma-nombre {
+  font-weight: 700;
   text-decoration: none;
   color: whitesmoke;
 }
@@ -316,12 +480,37 @@ body footer .footer-firma p .firma-nombre:hover {
     display: grid;
     grid-template-columns: auto auto;
   }
+  body main .grilla-reservas-pagos {
+    grid-template-columns: auto auto;
+  }
+  body main .grilla-reservas-pagos .reservas {
+    width: 100%;
+    border-right: 3px solid black;
+    border-bottom: none;
+  }
+  body main .grilla-reservas-pagos .pagos {
+    width: 100%;
+  }
   body main .instagram .instagram-grilla {
     grid-template-columns: auto auto;
   }
   body main .newsletter .newsletter-grilla {
     display: grid;
     grid-template-columns: auto auto;
+  }
+  body footer .footer-grilla {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  body footer .footer-grilla .footer-logo img {
+    width: 280px;
+  }
+  body footer .footer-grilla .footer-sitemap {
+    border-left: 1px solid white;
+  }
+  body footer .footer-grilla .footer-sitemap a p {
+    padding-left: 60px;
+    text-align: left;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -333,12 +522,27 @@ body footer .footer-firma p .firma-nombre:hover {
     grid-template-columns: auto;
     gap: 20px;
   }
-  body main .banner-responsive .banner-responsive-derecha img {
+  body main .banner-responsive .banner-responsive-derecha a img {
     max-height: 300px;
   }
   body main .trending .trending-grilla {
     display: grid;
     grid-template-columns: auto auto auto;
+  }
+  body main .instagram .instagram-grilla {
+    gap: 100px;
+  }
+  body main .newsletter .newsletter-grilla {
+    gap: 140px;
+  }
+  body footer .footer-grilla {
+    gap: 60px;
+  }
+  body footer .footer-grilla .footer-logo img {
+    margin-left: 60px;
+  }
+  body footer .footer-grilla .footer-sitemap {
+    margin-left: 30px;
   }
 }
 

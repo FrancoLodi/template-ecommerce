@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/styles.css">
-    <title>Template eCommerce</title>
+    <title>Pixi - Template eCommerce</title>
 </head>
 <body>
     <header>
@@ -14,9 +14,9 @@
         <nav class="navbar  bg-body-tertiary navbar-edit fixed-top">
             <div class="container-fluid navbar-content">
                 <!-- logo -->
-                <a class="navbar-logo-pixi" href="#"><img src="img/logo-pixi-negro.png" alt="Logo tienda pixi navbar"></a>
+                <a class="navbar-logo-pixi" href="index.html"><img src="img/logo-pixi-negro.png" alt="Logo tienda pixi navbar"></a>
                 <!-- carrito -->
-                <a href="#" class="navbar-icono-carrito">
+                <a href="pages/carrito.html" class="navbar-icono-carrito">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
                         <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
                     </svg>
@@ -30,22 +30,22 @@
                 <div class="collapse navbar-collapse navbar-paginas" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">TIENDA</a>
+                            <a class="nav-link" href="pages/tienda.html">TIENDA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">RESERVAS</a>
+                            <a class="nav-link" href="#seccion-reservas-pagos">RESERVAS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ENTREGAS</a>
+                            <a class="nav-link" href="#seccion-reservas-pagos">MEDIOS DE PAGO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">MEDIOS DE PAGO</a>
+                            <a class="nav-link" href="#seccion-redes">REDES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACTO</a>
+                            <a class="nav-link" href="#seccion-newsletter">NEWSLETTER</a>
                         </li>
                     </ul>
                 </div>
@@ -58,13 +58,27 @@
         <div class="banner-responsive">
             <div class="banner-responsive-izquierda">
                 <!-- banner -->
-                <img src="img/logo-pixi-blanco.png" alt="">
-                <button>TIENDA</button>
+                <img src="img/logo-pixi-blanco.png" alt="Logo pixi banner tienda">
+                <a href="pages/tienda.html">
+                    <button>TIENDA</button>
+                </a>
             </div>
             <div class="banner-responsive-derecha">
                 <!-- categories -->
-                <img src="img/ropa/top1.jpg" alt="">
-                <img src="img/ropa/bot3.jpg" alt="">
+                <a href="pages/tienda.html">
+                    <div class="prendas-superiores">
+                        <img src="img/ropa/top1.jpg" alt="Fotos seccion prendas superiores">
+                        <div class="superposicion">
+                            <p>ARRIBA</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="pages/tienda.html">
+                    <img src="img/ropa/bot3.jpg" alt="Foto seccion prendas inferiores">
+                    <div class="superposicion">
+                        <p>ABAJO</p>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -72,51 +86,112 @@
         <div class="trending">
             <p class="trending-titulo">LO MAS NUEVO</p>
             <div class="trending-grilla">
-                <div style="background-color: white; width: fit-content;">
-                    <div><img src="https://placedog.net/300/300" alt=""></div>
-                    <div><p>REMERA</p><p>$900</p></div>
+                <a href="pages/articulo.html">
+                    <div>
+                        <div><img src="img/ropa/bot4.jpg" alt="Primera prenda grilla trending pixi"></div>
+                        <div>
+                            <p class="tarjeta-nombre">SHORT GRIS</p>
+                            <p class="tarjeta-precio">$1200</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="pages/articulo.html">
+                    <div>
+                        <div><img src="img/ropa/top9.jpg" alt="Segunda prenda grilla trending pixi"></div>
+                        <div>
+                            <p class="tarjeta-nombre">MUSCULOSA VERDE MUSGO</p>
+                            <p class="tarjeta-precio">$1000</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="pages/articulo.html">
+                    <div>
+                        <div><img src="img/ropa/bot1.jpg" alt="Tercera prenda grilla trending pixi"></div>
+                        <div>
+                            <p class="tarjeta-nombre">MINI POLLERA DE JEAN</p>
+                            <p class="tarjeta-precio">$2300</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="pages/articulo.html">
+                    <div>
+                        <div><img src="img/ropa/top8.jpg" alt="Cuarta prenda grilla trending pixi"></div>
+                        <div>
+                            <p class="tarjeta-nombre">MUSCULOSA VERDE LIMA</p>
+                            <p class="tarjeta-precio">$1100</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="pages/articulo.html">
+                    <div>
+                        <div><img src="img/ropa/bot11.jpg" alt="Quinta prenda grilla trending pixi"></div>
+                        <div>
+                            <p class="tarjeta-nombre">SHORT MARRON</p>
+                            <p class="tarjeta-precio">$1500</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="pages/articulo.html">
+                    <div>
+                        <div><img src="img/ropa/top6.jpg" alt="Sexta prenda grilla trending pixi"></div>
+                        <div>
+                            <p class="tarjeta-nombre">REMERA AMARILLA</p>
+                            <p class="tarjeta-precio">$1600</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+            <a class="trending-button" href="pages/tienda.html"><button>VER TIENDA</button></a>
+        </div>
+
+        <!-- reservas y medios de pago -->
+        <div class="grilla-reservas-pagos" id="seccion-reservas-pagos">
+            <div class="reservas">
+                <div class="reservas-titulo">
+                    <p>RESERVAS</p>
                 </div>
-                <div style="background-color: white; width: fit-content;">
-                    <div><img src="https://placedog.net/301/300" alt=""></div>
-                    <div><p>REMERA</p><p>$900</p></div>
-                </div>
-                <div style="background-color: white; width: fit-content;">
-                    <div><img src="https://placedog.net/300/301" alt=""></div>
-                    <div><p>REMERA</p><p>$900</p></div>
-                </div>
-                <div style="background-color: white; width: fit-content;">
-                    <div><img src="https://placedog.net/301/301" alt=""></div>
-                    <div><p>REMERA</p><p>$900</p></div>
-                </div>
-                <div style="background-color: white; width: fit-content;">
-                    <div><img src="https://placedog.net/302/301" alt=""></div>
-                    <div><p>REMERA</p><p>$900</p></div>
-                </div>
-                <div style="background-color: white; width: fit-content;">
-                    <div><img src="https://placedog.net/301/302" alt=""></div>
-                    <div><p>REMERA</p><p>$900</p></div>
+                <div class="reservas-descripcion">
+                    <p>Para reservar una prenda tenes que abonar la mitad o el total del monto por transferencia.</p>
+                    <p>Los mensajes se responden por orden de llegada.</p>
                 </div>
             </div>
-            <a class="trending-button" href=""><button>VER TIENDA</button></a>
+            <div class="pagos">
+                <div class="pagos-titulo">
+                    <p>MEDIOS DE PAGO</p>
+                </div>
+                <div class="pagos-descripcion">
+                    <p>Las prendas se pueden abonar a través de transferencia, mandando el comprobante, o en efectivo.</p>
+                </div>
+            </div>
         </div>
         
+        
         <!-- instagram -->
-        <div class="instagram">
+        <div class="instagram" id="seccion-redes">
             <div class="instagram-titulo">
                 <p>REDES</p>
             </div>
             <div class="instagram-grilla">
                 <div class="instagram-descripcion">
                     <p>Seguinos en nuestro instagram para enterarte cada vez que publiquemos algo nuevo.</p>
+                    <a href="https://www.instagram.com/pixi_feria/" target="_blank">
+                        <button>INSTAGRAM</button>
+                    </a>
                 </div>
                 <div class="instagram-imagen">
-                    <img src="https://placedog.net/300/600" alt="">
+                    <img src="img/phone-ig.png" alt="Imagen celular instagram pixi">
                 </div>
             </div>
         </div>
 
         <!-- Newsletter -->
-        <div class="newsletter">
+        <div class="newsletter" id="seccion-newsletter">
             <p class="newsletter-titulo">NEWSLETTER</p>
             <div class="newsletter-grilla">
                 <div class="newsletter-grilla-texto">
@@ -136,25 +211,26 @@
                         <p>Email</p>
                         <textarea name="Email" id="" cols="50" rows="2" placeholder="Email"></textarea>
                     </div>
+                    <button>ENVIAR</button>
                 </div>
             </div>
-
-            
         </div>
 
     </main>
 
     <footer>
-        <div class="footer-logo">
-            <img src="img/logo-pixi-blanco.png" alt="">
-        </div>
-        <div class="footer-sitemap">
-            <p>SITEMAP</p>
-            <p>SITEMAP</p>
-            <p>SITEMAP</p>
-            <p>SITEMAP</p>
-            <p>SITEMAP</p>
-            <p>SITEMAP</p>
+        <div class="footer-grilla">   
+            <div class="footer-logo">
+                <img src="img/logo-pixi-blanco.png" alt="Logo pixi blanco footer">
+            </div>
+            <div class="footer-sitemap">
+                <a href="index.html"><p>HOME</p></a>
+                <a href="pages/tienda.html"><p>TIENDA</p></a>
+                <a href="#seccion-reservas-pagos"><p>RESERVAS</p></a>
+                <a href="#seccion-reservas-pagos"><p>MEDIOS DE PAGO</p></a>
+                <a href="#seccion-redes"><p>REDES</p></a>
+                <a href="#seccion-newsletter"><p>NEWSLETTER</p></a>
+            </div>
         </div>
 
         <div class="footer-firma">
