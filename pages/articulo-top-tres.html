@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Carrito Pixi - Template eCommerce</title>
+    <title>Articulo Pixi - Template eCommerce</title>
 </head>
 <body>
     
@@ -55,61 +55,60 @@
     </header>
 
     <main>
-        <div class="carrito">
-            <div class="carrito-titulo">
-                <p>CARRITO</p>
-            </div>
-            <div class="carrito-grilla">
-                <img src="../img/ropa/top4.jpg" alt="Prenda primera carrito pixi">
-                <div class="carrito-grilla-articulo">
-                    
-                    <div>
-                        <p>Musculosa con Flores</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="black" class="bi bi-trash3-fill icono-trash" viewBox="0 0 16 16">
-                            <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
-                        </svg>
-                    </div>
-                    <div class="linea-dos">
-                        <p>-</p>
-                        <p>1</p>
-                        <p>+</p>
-                        <p style="border-right: none;">$1.100</p>
-                    </div>
+        <div class="articulo">
+            <div class="articulo-grilla">
+                <div class="articulo-grilla-foto">
+                    <img src="../img/ropa/bot1.jpg" alt="Foto short gris tienda pixi">
                 </div>
-                <img src="../img/ropa/bot9.jpg" alt="Prenda segunda carrito pixi">
-                <div class="carrito-grilla-articulo">
-                    <div>
-                        <p>Short Rayado</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="black" class="bi bi-trash3-fill icono-trash" viewBox="0 0 16 16">
-                            <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
-                        </svg>
+                <div class="articulo-grilla-info">
+                    <div class="articulo-grilla-info-texto">
+                        <p class="articulo-texto-nombre">POLLERA DE JEAN</p>
+                        <p class="articulo-texto-precio">$2.300</p>
+                        <p class="articulo-texto-descripcion">Celeste, cortita. Tiro medio</p>
                     </div>
-                    <div class="linea-dos">
-                        <p>-</p>
-                        <p>1</p>
-                        <p>+</p>
-                        <p style="border-right: none;">$2.200</p>
+                    <div class="articulo-grilla-info-boton">
+                        <div class="articulo-controles-cantidad">
+                            <p>-</p>
+                            <p>1</p>
+                            <p>+</p>
+                        </div>
+                        <button>AGREGAR AL CARRITO</button>
                     </div>
-                </div>
-                <div class="carrito-grilla-total">
-                    <p>TOTAL $3.300</p>
-                </div>
-                <div class="carrito-grilla-total-dos">
-                    <p>TOTAL $3.300</p>
                 </div>
             </div>
-            <div class="carrito-botones">
-                <a href="" class="carrito-botones-comprar">
-                    <button>
-                        <p>INICIAR COMPRA</p>
-                    </button>
-                </a>
-                <a href="../pages/tienda.html" class="carrito-botones-productos">
-                    <button>
-                        <p>ver mas productos</p>
-                    </button>
-                </a>
-                
+            <div class="articulo-similares">
+                <div class="articulo-similares-titulo">
+                    <p>productos relacionados</p>
+                </div>
+                <div class="articulo-similares-fotos">
+                    <a class="tarjeta-similares tarjeta-similares-mqt" href="../pages/articulo-top-cinco.html">
+                        <div>
+                            <div><img src="../img/ropa/bot11.jpg" alt="Segunda prenda grilla trending pixi"></div>
+                            <div>
+                                <p class="tarjeta-nombre">SHORT MARRON</p>
+                                <p class="tarjeta-precio">$1500</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="tarjeta-similares" href="../pages/articulo-top-uno.html">
+                        <div>
+                            <div><img src="../img/ropa/bot4.jpg" alt="Segunda prenda grilla trending pixi"></div>
+                            <div>
+                                <p class="tarjeta-nombre">SHORT GRIS</p>
+                                <p class="tarjeta-precio">$1200</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="tarjeta-similares" href="../pages/articulo-top-cuatro.html">
+                        <div>
+                            <div><img src="../img/ropa/top8.jpg" alt="Segunda prenda grilla trending pixi"></div>
+                            <div>
+                                <p class="tarjeta-nombre">VERDE LIMA</p>
+                                <p class="tarjeta-precio">$1100</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </main>

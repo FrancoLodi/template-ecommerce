@@ -1,0 +1,37 @@
+// Media Query Tienda
+
+// Media query tablet
+@media screen and (min-width:720px){
+    body{
+        .tienda{
+            .tienda-arriba{
+                .tienda-arriba-grilla{
+                    grid-template-columns: auto auto;
+                }
+            }
+            .tienda-abajo{
+                .tienda-abajo-grilla{
+                    grid-template-columns: auto auto;
+                }
+            }
+        }
+    }
+}
+
+// Media query desktop
+@media screen and (min-width:1024px){
+    body{
+        .tienda{
+            .tienda-arriba{
+                .tienda-arriba-grilla{
+                    grid-template-columns: auto auto auto;
+                }
+            }
+            .tienda-abajo{
+                .tienda-abajo-grilla{
+                    grid-template-columns: auto auto auto;
+                }
+            }
+        }
+    }
+}

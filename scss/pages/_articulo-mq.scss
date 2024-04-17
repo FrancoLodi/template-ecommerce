@@ -1,0 +1,88 @@
+// MEDIA QUERY ARTICULO
+
+// Media query tablet
+@media screen and (min-width:720px){
+    body{
+        main{
+            .articulo{
+                .articulo-grilla{
+                    .articulo-grilla-foto{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .articulo-grilla-info{
+                        .articulo-grilla-info-boton{
+                            grid-template-columns: auto;
+                            button{
+                                padding: 12px 80px;
+                            }
+                        }
+                    }
+                }
+                .articulo-similares{
+                    .articulo-similares-fotos{
+                        grid-template-columns: auto auto;
+                        .tarjeta-similares-mqt{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Media query desktop
+@media screen and (min-width:1024px){
+    body{
+        main{
+            .articulo{
+                .articulo-grilla{
+                    grid-template-columns: auto 300px;
+                    .articulo-grilla-foto{
+                        img{
+                            width: 400px;
+                            height: 400px;
+                            border-bottom: none;
+                            border-right: 3px solid black;
+                        }
+                    }
+                    .articulo-grilla-info{
+                        display: grid;
+                        grid-template-columns: auto;
+                        gap: 126px;
+                        .articulo-grilla-info-texto{
+                            .articulo-texto-nombre{
+                                font-size: 30px;
+                            }
+                            .articulo-texto-precio{
+                                font-size: 22px;
+                                padding-top: 10px;
+                                padding-bottom: 16px;
+                            }
+                            .articulo-texto-descripcion{
+                                font-size: 18px;
+                            }
+                        }
+                        .articulo-grilla-info-boton{
+                            grid-template-columns: auto;
+                            button{
+                                border-right: 2px solid black;
+                                padding: 12px 15px;
+                            }
+                        }
+                    }
+                }
+                .articulo-similares{
+                    .articulo-similares-fotos{
+                        grid-template-columns: auto auto auto;
+                        .tarjeta-similares-mqt{
+                            display: grid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -4,32 +4,74 @@ body{
     main{
         .articulo{
             padding-top: 80px;
-            padding-bottom: 20px;
+            padding-bottom: 40px;
             display: grid;
             grid-template-columns: auto;
             justify-content: center;
+            background-color: whitesmoke;
             .articulo-grilla{
                 border: 3px solid black;
                 background-color: white;
+                display: grid;
+                grid-template-columns: auto;
                 .articulo-grilla-foto{
                     img{
+                        width: 300px;
                         border-bottom: 3px solid black;
                     }
                 }
                 .articulo-grilla-info{
+                    .articulo-grilla-info-texto{
+                        padding-top: 10px;
+                        padding-bottom: 6px;
+                        padding-left: 18px;
+                        .articulo-texto-nombre{
+                            font-size: 26px;
+                            margin: 0;
+                        }
+                        .articulo-texto-precio{
+                            font-size: 18px;
+                            font-weight: 700;
+                            margin: 0;
+                            padding-top: 5px;
+                            padding-bottom: 8px;
+                        }
+                        .articulo-texto-descripcion{
+                            font-size: 14px;
+                            margin: 0;
+                        }
+                    }
                     .articulo-grilla-info-boton{
+                        display: grid;
+                        grid-template-columns: auto;
+                        justify-content: center;
+                        .articulo-controles-cantidad{
+                            display: grid;
+                            grid-template-columns: auto auto auto;
+                            position: relative;
+                            top: 16px;
+                            p{
+                                text-align: center;
+                                font-size: 20px;
+                                border: 2px solid black;
+                                border-top: 3px solid black;
+                                padding-top: 8px;
+                                padding-bottom: 8px;
+                                cursor: pointer;
+                            }
+                        }
                         button{
                             text-align: center;
                             font-size: 24px;
                             font-family: sans-serif;
                             color: white;
-                            padding: 6px 16px;
+                            padding: 12px 16px;
                             border: none;
                             background-color: black;
                             width: fit-content;
                         }
                         button:hover{
-                            box-shadow: 3px 3px 0 white;
+                            box-shadow: 3px 3px 0 gray;
                             transform: translate(-3px, -3px);
                             transition: all 0.10s ease-in-out;
                         }
@@ -41,6 +83,52 @@ body{
                     }
                 }
             }
+            .articulo-similares{
+                padding-top: 40px;
+                .articulo-similares-titulo{
+                    p{
+                        text-align: center;
+                        font-size: 20px;
+                        font-weight: 700;
+                        font-family: sans-serif;
+                        margin-bottom: 26px;
+                    }
+                }
+                .articulo-similares-fotos{
+                    display: grid;
+                    grid-template-columns: auto;
+                    justify-content: center;
+                    gap: 20px;
+                    .tarjeta-similares{
+                        text-decoration: none;
+                        div{
+                            border: 2px solid black;
+                            div{
+                                img{
+                                    width: 200px;
+                                }
+                            }
+                            div{
+                                .tarjeta-nombre{
+                                    font-size: 17px;
+                                    margin: 0;
+                                    padding: 8px 18px;
+                                    color: black;
+                                    border-bottom: 3px solid black;
+                                }
+                                .tarjeta-precio{
+                                font-size: 15px;
+                                    margin: 0;
+                                    padding: 8px 18px;
+                                    color: black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
+
+@import 'articulo-mq';
