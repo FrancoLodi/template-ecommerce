@@ -9,6 +9,97 @@
     <title>Articulo Pixi - Template eCommerce</title>
 </head>
 <body>
-    <h1>Pagina Articulo 1</h1>
+    
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar  bg-body-tertiary navbar-edit fixed-top">
+            <div class="container-fluid navbar-content">
+                <!-- logo -->
+                <a class="navbar-logo-pixi" href="../index.html"><img src="../img/logo-pixi-negro.png" alt="Logo tienda pixi navbar"></a>
+                <!-- carrito -->
+                <a href="../pages/carrito.html" class="navbar-icono-carrito">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                        <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                    </svg>
+                </a>
+                <!-- burger -->
+                <button class="navbar-toggler navbar-icono-hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="black" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse navbar-paginas" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/tienda.html">TIENDA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#seccion-reservas-pagos">RESERVAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#seccion-reservas-pagos">MEDIOS DE PAGO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#seccion-redes">REDES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#seccion-newsletter">NEWSLETTER</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="articulo">
+            <div class="articulo-grilla">
+                <div class="articulo-grilla-foto">
+                    <img src="https://placedog.net/300" alt="">
+                </div>
+                <div class="articulo-grilla-info">
+                    <div class="articulo-grilla-info-texto">
+                        <p>REMERA</p>
+                        <p>15000</p>
+                        <p>descripcion remera</p>
+                    </div>
+                    <div class="articulo-grilla-info-boton">
+                        <button>AGREGAR AL CARRITO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="articulo-similares">
+                <div class="articulo-similares-fotos">
+                    <p>SIMILARES</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-grilla">   
+            <div class="footer-logo">
+                <img src="../img/logo-pixi-blanco.png" alt="Logo pixi blanco footer">
+            </div>
+            <div class="footer-sitemap">
+                <a href="../index.html"><p>HOME</p></a>
+                <a href="../pages/tienda.html"><p>TIENDA</p></a>
+                <a href="../index.html#seccion-reservas-pagos"><p>RESERVAS</p></a>
+                <a href="../index.html#seccion-reservas-pagos"><p>MEDIOS DE PAGO</p></a>
+                <a href="../index.html#seccion-redes"><p>REDES</p></a>
+                <a href="../index.html#seccion-newsletter"><p>NEWSLETTER</p></a>
+            </div>
+        </div>
+
+        <div class="footer-firma">
+            <p>DESIGNED AND CODED WITH LOVE BY <a href="https://francolodi.github.io/portfolio/" class="firma-nombre" target="_blank">FRANCO LODI</span></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

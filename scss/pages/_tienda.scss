@@ -1,0 +1,95 @@
+// TIENDA - PRODUCTOS - ARRIBA - ABAJO
+
+body{
+    .tienda{
+        padding-top: 60px;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        background-color: white;
+        .tienda-titulo{
+            p{
+                font-size: 40px;
+            }
+        }
+        .tienda-arriba{
+            .tienda-arriba-titulo{
+                p{
+                    font-size: 40px;
+                }
+            }
+            .tienda-arriba-grilla{
+                display: grid;
+                grid-template-columns: auto;
+                gap: 20px;
+                a{
+                    text-decoration: none;
+                    div{
+                        border: 2px solid black;
+                        div{
+                            img{
+                                max-width: 300px;
+                            }
+                            
+                        }
+                        div{
+                            .tarjeta-nombre{
+                                font-size: 17px;
+                                margin: 0;
+                                padding: 8px 18px;
+                                color: black;
+                                border-bottom: 3px solid black;
+                            }
+                            .tarjeta-precio{
+                            font-size: 15px;
+                                margin: 0;
+                                padding: 8px 18px;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .tienda-abajo{
+            .tienda-abajo-titulo{
+                p{
+                    font-size: 40px;
+                }
+            }
+            .tienda-abajo-grilla{
+                display: grid;
+                grid-template-columns: auto;
+                gap: 20px;
+                a{
+                    text-decoration: none;
+                    div{
+                        border: 2px solid black;
+                        div{
+                            img{
+                                max-width: 300px;
+                            }
+                            
+                        }
+                        div{
+                            .tarjeta-nombre{
+                                font-size: 17px;
+                                margin: 0;
+                                padding: 8px 18px;
+                                color: black;
+                                border-bottom: 3px solid black;
+                            }
+                            .tarjeta-precio{
+                            font-size: 15px;
+                                margin: 0;
+                                padding: 8px 18px;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

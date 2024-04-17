@@ -1,4 +1,4 @@
-// HOME - LANDING PAGE
+// HOME - LANDING PAGE - Header & Footer
 
 body{
     background-color: palevioletred;
@@ -95,7 +95,7 @@ body{
                 a{
                     button{
                         text-align: center;
-                        font-size: 34px;
+                        font-size: 28px;
                         font-family: sans-serif;
                         color: white;
                         padding: 6px 16px;
@@ -471,6 +471,11 @@ body{
                         color:white;
                     }
                 }
+                a:hover{
+                    p{
+                        color: #2aa0dd;
+                    }
+                }
             }
         }
 
@@ -488,7 +493,7 @@ body{
                     color:whitesmoke;
                 }
                 .firma-nombre:hover{
-                    color: palevioletred;
+                    color: #2aa0dd;
                 }
             }
         }

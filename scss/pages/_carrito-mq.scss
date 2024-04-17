@@ -1,0 +1,104 @@
+// Media Query Carrito
+
+// Media query tablet
+@media screen and (min-width:720px){
+    body{
+        main{
+            .carrito{
+                .carrito-grilla{
+                    grid-template-columns: auto auto;
+                    img{
+                        width: 172px;
+                        border-right: none;
+                    }
+                    .carrito-grilla-articulo{
+                        div{
+                            p{
+                                padding-top: 26px;
+                                padding-bottom: 26px;
+                                padding-right: 100px;
+                                padding-left: 20px;
+                                font-size: 20px;
+                            }
+                        }
+                        .linea-dos{
+                            //border-bottom: 3px solid black;
+                            p{
+                                padding-left: 28px;
+                                padding-right: 20px;
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                    .carrito-grilla-total{
+                        border-right: none;
+                        p{
+                            display: none;
+                        }
+                    }
+                    .carrito-grilla-total-dos{
+                        border-left: none;
+                        display: flex;
+                        p{
+                            font-size: 24px;
+                            padding-top: 12px;
+                            padding-bottom: 12px;
+                            padding-left: 170px;
+                        }
+                    }
+                }
+                .carrito-botones{
+                    .carrito-botones-comprar, .carrito-botones-productos{
+                        button{
+                            padding: 16px 163px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Media query desktop
+@media screen and (min-width:1024px){
+    body{
+        main{
+            .carrito{
+                .carrito-grilla{
+                    .carrito-grilla-articulo{
+                        div{
+                            p{
+                                padding-right: 220px;
+                            }
+                        }
+                        .linea-dos{
+                            p{
+                                padding-left: 42px;
+                            }
+                        }
+                    }
+                    .carrito-grilla-total-dos{
+                        p{
+                            padding-left: 272px;
+                        }
+                    }
+                }
+                .carrito-botones{
+                    grid-template-columns: auto auto;
+                    .carrito-botones-comprar{
+                        order: 2;
+                        button{
+                            padding: 16px 62px 0;
+                            
+                        }
+                    }
+                    .carrito-botones-productos{
+                        button{
+                            padding: 13px 60px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

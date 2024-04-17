@@ -1,0 +1,134 @@
+// CARRITO
+
+body{
+    main{
+        .carrito{
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: center;
+            padding-top: 70px;
+            padding-bottom: 40px;
+            background-color: whitesmoke;
+            .carrito-titulo{
+                font-size: 36px;
+                font-weight: 700;
+                text-align: center;
+                color: whitesmoke;
+                text-shadow: 4px 4px 0 black;
+                font-family: sans-serif;
+            }
+            .carrito-grilla{
+                display: grid;
+                grid-template-columns: auto;
+                img{
+                    border: 3px solid black;
+                    border-bottom: none;
+                    width: 306px;
+                }
+                .carrito-grilla-articulo{
+                    div{
+                        display: grid;
+                        grid-template-columns: auto 40px;
+                        align-items: center;
+                        border: 3px solid black;
+                        border-bottom: none;
+                        p{
+                            margin: 0;
+                            padding: 8px 16px;
+                            border-right: 3px solid black;
+                        }
+                        .icono-trash{
+                            padding-left: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                    .linea-dos{
+                        display: grid;
+                        grid-template-columns: auto auto auto auto;
+                        p{
+                            padding-left: 26px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .carrito-grilla-total{
+                    border: 6px solid black;
+                    p{
+                        text-align: center;
+                        padding: 8px 16px;
+                        margin: 0;
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                }
+                .carrito-grilla-total-dos{
+                    display: none;
+                    border: 6px solid black;
+                    p{
+                        text-align: center;
+                        padding: 8px 16px;
+                        margin: 0;
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                }
+
+            }
+            .carrito-botones{
+                padding-top: 40px;
+                display: grid;
+                grid-template-columns: auto;
+                justify-content: center;
+                .carrito-botones-comprar{
+                    button{
+                        text-align: center;
+                        font-size: 24px;
+                        font-family: sans-serif;
+                        color: white;
+                        padding: 16px 52px 0;
+                        margin-bottom: 0;
+                        border: none;
+                        background-color: black;
+                        width: fit-content;
+                        border: 1px solid black;
+                    }
+                    button:hover{
+                        box-shadow: 3px 3px 0 gray;
+                        transform: translate(-3px, -3px);
+                        transition: all 0.10s ease-in-out;
+                    }
+                    button:active{
+                        box-shadow: none;
+                        transform: translate(1px, 1px);
+                        transition: all 0.10s ease-in-out;
+                    }
+                }
+                .carrito-botones-productos{
+                    button{
+                        text-align: center;
+                        font-size: 24px;
+                        font-family: sans-serif;
+                        color: black;
+                        padding: 16px 52px 0;
+                        margin-bottom: 0;
+                        border: 3px solid black;
+                        background-color: white;
+                        width: fit-content;
+                    }
+                    button:hover{
+                        box-shadow: 3px 3px 0 black;
+                        transform: translate(-3px, -3px);
+                        transition: all 0.10s ease-in-out;
+                    }
+                    button:active{
+                        box-shadow: none;
+                        transform: translate(1px, 1px);
+                        transition: all 0.10s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import '../pages/carrito-mq';

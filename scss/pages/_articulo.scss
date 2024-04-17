@@ -1,0 +1,46 @@
+// ARTICULO x
+
+body{
+    main{
+        .articulo{
+            padding-top: 80px;
+            padding-bottom: 20px;
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: center;
+            .articulo-grilla{
+                border: 3px solid black;
+                background-color: white;
+                .articulo-grilla-foto{
+                    img{
+                        border-bottom: 3px solid black;
+                    }
+                }
+                .articulo-grilla-info{
+                    .articulo-grilla-info-boton{
+                        button{
+                            text-align: center;
+                            font-size: 24px;
+                            font-family: sans-serif;
+                            color: white;
+                            padding: 6px 16px;
+                            border: none;
+                            background-color: black;
+                            width: fit-content;
+                        }
+                        button:hover{
+                            box-shadow: 3px 3px 0 white;
+                            transform: translate(-3px, -3px);
+                            transition: all 0.10s ease-in-out;
+                        }
+                        button:active{
+                            box-shadow: none;
+                            transform: translate(1px, 1px);
+                            transition: all 0.10s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
