@@ -854,6 +854,7 @@ body main .articulo .articulo-grilla {
   background-color: white;
   display: grid;
   grid-template-columns: auto;
+  justify-content: center;
 }
 body main .articulo .articulo-grilla .articulo-grilla-foto img {
   width: 300px;
@@ -959,8 +960,14 @@ body main .articulo .articulo-similares .articulo-similares-fotos .tarjeta-simil
 }
 
 @media screen and (min-width: 720px) {
+  body main .articulo .articulo-grilla {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
   body main .articulo .articulo-grilla .articulo-grilla-foto img {
     width: 100%;
+    max-width: 430px;
   }
   body main .articulo .articulo-grilla .articulo-grilla-info .articulo-grilla-info-boton {
     grid-template-columns: auto;

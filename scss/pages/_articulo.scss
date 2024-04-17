@@ -14,6 +14,7 @@ body{
                 background-color: white;
                 display: grid;
                 grid-template-columns: auto;
+                justify-content: center;
                 .articulo-grilla-foto{
                     img{
                         width: 300px;

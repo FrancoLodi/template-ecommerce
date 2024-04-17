@@ -6,9 +6,13 @@
         main{
             .articulo{
                 .articulo-grilla{
+                    display: grid;
+                    grid-template-columns: auto;
+                    justify-content: center;
                     .articulo-grilla-foto{
                         img{
                             width: 100%;
+                            max-width: 430px;
                         }
                     }
                     .articulo-grilla-info{
